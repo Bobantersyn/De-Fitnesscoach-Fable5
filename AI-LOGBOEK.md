@@ -31,3 +31,21 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
   - Alle cijfers en quotes komen uit echte reviews; niets verzinnen bij uitbreidingen.
   - Lokaal previewen: `python3 -m http.server 4173 --directory ~/Documents/Bob/de-fitnesscoach-fable5` (launch-config `dfc-fable5` in `Landingspaginacoaching-2026/.claude/launch.json`).
   - Header/footer zijn per pagina gedupliceerd (geen build-stap): wijzigingen daaraan in alle 5 HTML-bestanden doorvoeren.
+
+---
+
+## Entry 2
+
+- **ID:** 2
+- **Start:** 2026-07-02 20:15
+- **Einde:** 2026-07-02 20:20
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** gemaakt
+- **Onderdeel:** Lokale server + GitHub-repository
+- **Bestand(en):** `start-server.command`, `.gitignore`, git-repo
+- **Briefing:** Bob wil de site voorlopig lokaal bewaren en op GitHub; Vercel nog niet.
+- **Aanleiding:** Versiebeheer en backup zonder al live te gaan.
+- **Doel:** Site veilig bewaard en lokaal te bekijken.
+- **Status:** voltooid
+- **Resultaat:** Dubbelklikbaar startscript (`start-server.command`, poort 8080) en publieke repo https://github.com/Bobantersyn/De-Fitnesscoach-Fable5 (branch `main`, alles gepusht).
+- **Notes voor opvolger:** Nog niet gedeployed; als Vercel later gewenst is, is de repo de bron.
