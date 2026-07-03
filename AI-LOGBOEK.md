@@ -49,3 +49,21 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** Dubbelklikbaar startscript (`start-server.command`, poort 8080) en publieke repo https://github.com/Bobantersyn/De-Fitnesscoach-Fable5 (branch `main`, alles gepusht).
 - **Notes voor opvolger:** Nog niet gedeployed; als Vercel later gewenst is, is de repo de bron.
+
+---
+
+## Entry 3
+
+- **ID:** 3
+- **Start:** 2026-07-04 00:20
+- **Einde:** 2026-07-04 00:35
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Stockfoto's en logo vervangen door echt materiaal
+- **Bestand(en):** `assets/img/*` (nieuw: ertugrul-gym/portret/belts, broeders-gym, maaltijd-wraps, bigmac-wrap, face-ali/bob/jeff, logo.png), `index.html`, `over-ertugrul.html`
+- **Briefing:** Bob wees op de map `~/Desktop/De Fitnesscoach` met echte foto's, reviews en "De Juist Logo's".
+- **Aanleiding:** De site stond nog vol royalty-free stock; echt beeld maakt hem geloofwaardig (zie ook Bobs designfeedback).
+- **Doel:** Alle zichtbare stock vervangen door echte foto's van Ertuğrul, cliënten en maaltijden, plus het juiste logo (mannetje met dumbbell).
+- **Status:** voltooid
+- **Resultaat:** Hero = echte gymfoto van Ertuğrul (gecropt naar 4:5), over-pagina = studioportret, pijler 1 = Ertuğrul met lifting belts, pijler 3 = broedersfoto, voeding = echte maaltijden uit de voedingsapp (incl. Big Mac Wrap in de receptenband), proofline-gezichten = Ali/Bob/Jeff, logo = `01_mannetje_transparant.png` (512px). Alles geverifieerd in preview: geen kapotte afbeeldingen.
+- **Notes voor opvolger:** Bronmateriaal staat in `~/Desktop/De Fitnesscoach/` (logo-SVG's, meer trainings- en voedingsfoto's, before/afters, ebooks). Ongebruikte stockfoto's staan nog in `assets/img/` en kunnen weg zodra zeker is dat ze nergens meer nodig zijn.
