@@ -91,3 +91,24 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
   5. 24/7-chip op de broedersfoto van boven naar onder verplaatst zodat Ertuğruls gezicht vrij is.
   6. Groot outline-woordmerk "De Fitnesscoach" uit de footer verwijderd op alle 5 pagina's (incl. CSS).
 - **Notes voor opvolger:** Notion-pagina "Website" (38afcad62f628091a40cc49ba729a774) is de plek waar Bob feedback verzamelt; check die bij een volgende ronde. Er stonden ook drie inspiratielinks in: shaders.com, is.graphics, contentcore.xyz.
+
+---
+
+## Entry 5
+
+- **ID:** 5
+- **Start:** 2026-07-07 21:05
+- **Einde:** 2026-07-07 21:25
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Cijferwand uniform gemaakt + before/afters vervangen door onbewerkte foto's
+- **Bestand(en):** `index.html`, `resultaten.html`, `assets/style.css`, `assets/img/ba1-voor/na.jpg`, `assets/img/ba2-voor/na.jpg`
+- **Briefing:** Bob vond de cijferwand lelijk (mix van "−40 kg" en "100+ → 77 kg") en wilde de before/afters met onbewerkte foto's in plaats van de Canva-collages.
+- **Aanleiding:** Feedbackronde 2.
+- **Doel:** Consistente cijfers en geloofwaardiger beeldmateriaal in de huisstijl van de site zelf.
+- **Status:** voltooid
+- **Resultaat:**
+  - Cijferwand: alle cellen nu uniform "−XX kg" (aflopend gesorteerd), naam apart, quote eronder; boxerig raster vervangen door open grid met cyaan streepje boven elk getal. Resultatenpagina sluit af met een "Jij?"-cel met link naar contact.
+  - Nieuw `.ba-card`-component: twee onbewerkte foto's naast elkaar in één kader met VOOR/NA-pillen in huisstijl. Twee bevestigde paren gebruikt uit `Before afters onbewerkt`: (1) 42dd50ee → b1b794a8 (kleedkamer → eindshoot, zelfde man als omer-2-collage) en (2) WhatsApp 2025-06-21 13.02.27 → 13.02.50 (zelfde minuut geappt, zelfde man). Omer-collages (`omer-*.jpg`) overal van de pagina's verwijderd.
+  - Beide pagina's accesslint-schoon; alle nieuwe afbeeldingen laden.
+- **Notes voor opvolger:** In `Before afters onbewerkt` liggen nog: Emre 1+2 (volgorde onduidelijk, niet gebruikt), "Juiste foto.jpg" (zware before, na-foto ontbreekt los), 2025-12-06 (tattoo, geen after) en een vrouwelijke transformatie (2026-05-30, 2 collages); site richt zich op mannen, dus niet geplaatst zonder overleg met Bob.
