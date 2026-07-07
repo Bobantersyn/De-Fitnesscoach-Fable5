@@ -129,3 +129,20 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** Resultatenpagina toont nu 6 ba-cards: ba1 (kleedkamer→eindshoot), ba5 (onbewerkte originelen van de oude omer-1-collage, IMG_5420/IMG_3024), ba3 (kledingkast, WhatsApp-notificatie uit before weggecropt i.v.m. privacy), ba4 (gang→dubbele biceps woonkamer), ba2 (zelfde-minuut appjes), ba6 (strand→DFC-logobord). Homepage toont ba1 + ba5. Alle beelden 3:4, geen kapotte afbeeldingen.
 - **Notes voor opvolger:** ba6-na is een lage-resolutie screenshot (354×472); vraag Bob om het origineel voor scherper beeld. Zijaanzichten van het kastman-paar (image-4/image-5 in Downloads) zijn beschikbaar maar niet gebruikt. Bronbestanden staan nog in ~/Downloads.
+
+---
+
+## Entry 7
+
+- **ID:** 7
+- **Start:** 2026-07-08
+- **Einde:** 2026-07-08
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Resultaatcijfers verplaatst naar lopende band; cijferwand vervangen door extra before/afters
+- **Bestand(en):** `index.html`, `resultaten.html`, `assets/style.css`
+- **Briefing:** Bob vond de cijfers bij de foto's nog steeds niet mooi en stelde voor ze in de bewegende tekstband te zetten, met daarvoor in de plaats meer before/after-foto's.
+- **Aanleiding:** Feedbackronde 3.
+- **Status:** voltooid
+- **Resultaat:** De cyaan marquee is nu een "scorebord" (−40 kg · Bob ✶ −30 kg · Süley ✶ … ✶ 500+ broeders geholpen), op de homepage onder de statbar en nieuw toegevoegd op de resultatenpagina onder de page-hero. De cijferwand is volledig verwijderd (HTML + CSS); homepage toont nu 4 ba-cards, resultatenpagina 6. Lange quotes blijven in de reviewsectie staan.
+- **Notes voor opvolger:** De marquee is aria-hidden en decoratief; de onderliggende cijfers blijven voor screenreaders beschikbaar via de reviewquotes. Bij prefers-reduced-motion staat de band stil.
