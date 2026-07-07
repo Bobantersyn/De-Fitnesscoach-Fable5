@@ -112,3 +112,20 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
   - Nieuw `.ba-card`-component: twee onbewerkte foto's naast elkaar in één kader met VOOR/NA-pillen in huisstijl. Twee bevestigde paren gebruikt uit `Before afters onbewerkt`: (1) 42dd50ee → b1b794a8 (kleedkamer → eindshoot, zelfde man als omer-2-collage) en (2) WhatsApp 2025-06-21 13.02.27 → 13.02.50 (zelfde minuut geappt, zelfde man). Omer-collages (`omer-*.jpg`) overal van de pagina's verwijderd.
   - Beide pagina's accesslint-schoon; alle nieuwe afbeeldingen laden.
 - **Notes voor opvolger:** In `Before afters onbewerkt` liggen nog: Emre 1+2 (volgorde onduidelijk, niet gebruikt), "Juiste foto.jpg" (zware before, na-foto ontbreekt los), 2025-12-06 (tattoo, geen after) en een vrouwelijke transformatie (2026-05-30, 2 collages); site richt zich op mannen, dus niet geplaatst zonder overleg met Bob.
+
+---
+
+## Entry 6
+
+- **ID:** 6
+- **Start:** 2026-07-08 
+- **Einde:** 2026-07-08
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Vier nieuwe onbewerkte before/after-paren toegevoegd
+- **Bestand(en):** `assets/img/ba3..ba6-voor/na.jpg`, `resultaten.html`, `index.html`
+- **Briefing:** Bob downloadde nieuwe onbewerkte foto's naar ~/Downloads.
+- **Aanleiding:** Vervolg op feedbackronde 2 (meer echte before/afters).
+- **Status:** voltooid
+- **Resultaat:** Resultatenpagina toont nu 6 ba-cards: ba1 (kleedkamer→eindshoot), ba5 (onbewerkte originelen van de oude omer-1-collage, IMG_5420/IMG_3024), ba3 (kledingkast, WhatsApp-notificatie uit before weggecropt i.v.m. privacy), ba4 (gang→dubbele biceps woonkamer), ba2 (zelfde-minuut appjes), ba6 (strand→DFC-logobord). Homepage toont ba1 + ba5. Alle beelden 3:4, geen kapotte afbeeldingen.
+- **Notes voor opvolger:** ba6-na is een lage-resolutie screenshot (354×472); vraag Bob om het origineel voor scherper beeld. Zijaanzichten van het kastman-paar (image-4/image-5 in Downloads) zijn beschikbaar maar niet gebruikt. Bronbestanden staan nog in ~/Downloads.
