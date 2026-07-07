@@ -67,3 +67,27 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** Hero = echte gymfoto van Ertuğrul (gecropt naar 4:5), over-pagina = studioportret, pijler 1 = Ertuğrul met lifting belts, pijler 3 = broedersfoto, voeding = echte maaltijden uit de voedingsapp (incl. Big Mac Wrap in de receptenband), proofline-gezichten = Ali/Bob/Jeff, logo = `01_mannetje_transparant.png` (512px). Alles geverifieerd in preview: geen kapotte afbeeldingen.
 - **Notes voor opvolger:** Bronmateriaal staat in `~/Desktop/De Fitnesscoach/` (logo-SVG's, meer trainings- en voedingsfoto's, before/afters, ebooks). Ongebruikte stockfoto's staan nog in `assets/img/` en kunnen weg zodra zeker is dat ze nergens meer nodig zijn.
+
+---
+
+## Entry 4
+
+- **ID:** 4
+- **Start:** 2026-07-07 20:40
+- **Einde:** 2026-07-07 20:55
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Feedbackronde 1 van Bob verwerkt (Notion-pagina "Website")
+- **Bestand(en):** `index.html`, `coaching.html`, `resultaten.html`, `over-ertugrul.html`, `contact.html`, `assets/style.css`
+- **Briefing:** Bob deelde een Notion-pagina met 6 feedbackpunten met screenshots.
+- **Aanleiding:** Eerste review van de site door Bob.
+- **Doel:** Alle feedbackpunten doorvoeren.
+- **Status:** voltooid
+- **Resultaat:**
+  1. Juiste logo: was al vervangen in entry 3.
+  2. Kicker "Online coaching · Den Haag & heel NL" boven de hero-kop verwijderd.
+  3. Proofline: meer ruimte tussen gezichten en tekst; tekst nu "Deze broeders gingen je voor." (zonder kilo's).
+  4. Statbar nu: 12+ jaar / 500+ broeders geholpen / DFC-community / 1 app voor voeding én training (cijfer 500+ komt van Bob zelf).
+  5. 24/7-chip op de broedersfoto van boven naar onder verplaatst zodat Ertuğruls gezicht vrij is.
+  6. Groot outline-woordmerk "De Fitnesscoach" uit de footer verwijderd op alle 5 pagina's (incl. CSS).
+- **Notes voor opvolger:** Notion-pagina "Website" (38afcad62f628091a40cc49ba729a774) is de plek waar Bob feedback verzamelt; check die bij een volgende ronde. Er stonden ook drie inspiratielinks in: shaders.com, is.graphics, contentcore.xyz.
