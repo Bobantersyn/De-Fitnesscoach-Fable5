@@ -163,3 +163,19 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** ba6-na is nu de DFC-bord foto op hoge resolutie (900×1200, uit IMG_5420.heic); ba5-voor is de zware broeder, hi-res uit de originele collage gecropt met ffmpeg (880×1173) in plaats van het 354px-screenshot. Beide kaarten kloppen nu logisch (zwaarder → slanker). De lage-resolutie-kanttekening uit entry 6 is hiermee vervallen.
 - **Notes voor opvolger:** Losse originelen van de zware broeder (voor-foto) bestaan mogelijk nog ergens; de crop uit de collage is nu prima, maar een origineel blijft welkom.
+
+---
+
+## Entry 9
+
+- **ID:** 9
+- **Start:** 2026-07-08
+- **Einde:** 2026-07-08
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Twee extra before/after-kaarten (zijaanzichten)
+- **Bestand(en):** `assets/img/ba7-voor/na.jpg`, `assets/img/ba8-voor/na.jpg`, `resultaten.html`
+- **Briefing:** Bob wil meer before/afters; al het materiaal staat nu in `Before afters onbewerkt`.
+- **Status:** voltooid
+- **Resultaat:** Resultatenpagina toont nu 8 ba-cards. Nieuw: ba7 = kledingkast-broeder van opzij (image-4 → image-5, zwarte balken weggecropt), ba8 = groene-muur broeder van opzij (73be6135 → 595b99ea). Alle beelden 3:4, geen kapotte afbeeldingen.
+- **Notes voor opvolger:** Nog onbenut in de map: Emre 1+2 (volgorde voor/na onbekend), "Juiste foto.jpg" en de tattoo-jongen (alleen before, geen after) en de vrouwelijke transformatie (positionering site is "voor mannen"; alleen plaatsen na akkoord van Bob).
