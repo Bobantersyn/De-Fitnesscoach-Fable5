@@ -195,3 +195,19 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** ba9 toegevoegd (Emre 2 → Emre 1), resultatenpagina toont nu 9 ba-cards, alle beelden laden.
 - **Notes voor opvolger:** Enige resterende kandidaten in de map: "Juiste foto.jpg" en de tattoo-jongen (missen een after) en de vrouwelijke transformatie (wacht op besluit van Bob over positionering).
+
+---
+
+## Entry 11
+
+- **ID:** 11
+- **Start:** 2026-07-08
+- **Einde:** 2026-07-08
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Vier nieuwe before/after-kaarten uit WhatsApp-batch 2026-07-08
+- **Bestand(en):** `assets/img/ba10..ba12,ba14-voor/na.jpg`, `resultaten.html`
+- **Briefing:** Bob zette 10 nieuwe foto's in `Before afters onbewerkt`.
+- **Status:** voltooid
+- **Resultaat:** 13 ba-cards totaal. Nieuw: ba10 (kant-en-klare collage gesplitst, grijze short), ba11 (keuken → groene muur, onderarm-tattoo), ba12 (Apple Watch-broeder, screenshotbalken weggecropt), ba14 (tattoo-sleeve, lage resolutie 300×400, bijschrift benoemt dat bewust: "zoals het binnenkwam op WhatsApp").
+- **Notes voor opvolger:** Twee paren bewust NIET geplaatst, wachten op bevestiging van Bob: (a) gordijnen-jongen (12.22.31 (6)) → vakantiefoto met zonnebril (12.22.31 (7)): zelfde persoon?; (b) badkamer-collage (12.22.31 (1)): linkerfoto is de slankere, dus volgorde in de collage lijkt omgedraaid; welke is voor?
