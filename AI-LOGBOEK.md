@@ -179,3 +179,19 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** Resultatenpagina toont nu 8 ba-cards. Nieuw: ba7 = kledingkast-broeder van opzij (image-4 → image-5, zwarte balken weggecropt), ba8 = groene-muur broeder van opzij (73be6135 → 595b99ea). Alle beelden 3:4, geen kapotte afbeeldingen.
 - **Notes voor opvolger:** Nog onbenut in de map: Emre 1+2 (volgorde voor/na onbekend), "Juiste foto.jpg" en de tattoo-jongen (alleen before, geen after) en de vrouwelijke transformatie (positionering site is "voor mannen"; alleen plaatsen na akkoord van Bob).
+
+---
+
+## Entry 10
+
+- **ID:** 10
+- **Start:** 2026-07-08
+- **Einde:** 2026-07-08
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Negende before/after-kaart (Emre)
+- **Bestand(en):** `assets/img/ba9-voor/na.jpg`, `resultaten.html`
+- **Briefing:** Bob bevestigde: Emre 1 = after, Emre 2 = before.
+- **Status:** voltooid
+- **Resultaat:** ba9 toegevoegd (Emre 2 → Emre 1), resultatenpagina toont nu 9 ba-cards, alle beelden laden.
+- **Notes voor opvolger:** Enige resterende kandidaten in de map: "Juiste foto.jpg" en de tattoo-jongen (missen een after) en de vrouwelijke transformatie (wacht op besluit van Bob over positionering).
