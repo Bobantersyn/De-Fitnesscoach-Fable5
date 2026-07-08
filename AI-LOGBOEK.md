@@ -146,3 +146,20 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** De cyaan marquee is nu een "scorebord" (−40 kg · Bob ✶ −30 kg · Süley ✶ … ✶ 500+ broeders geholpen), op de homepage onder de statbar en nieuw toegevoegd op de resultatenpagina onder de page-hero. De cijferwand is volledig verwijderd (HTML + CSS); homepage toont nu 4 ba-cards, resultatenpagina 6. Lange quotes blijven in de reviewsectie staan.
 - **Notes voor opvolger:** De marquee is aria-hidden en decoratief; de onderliggende cijfers blijven voor screenreaders beschikbaar via de reviewquotes. Bij prefers-reduced-motion staat de band stil.
+
+---
+
+## Entry 8
+
+- **ID:** 8
+- **Start:** 2026-07-08
+- **Einde:** 2026-07-08
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Gekruiste before/after-foto's hersteld (ba5/ba6)
+- **Bestand(en):** `assets/img/ba5-voor.jpg`, `assets/img/ba6-na.jpg`, `resultaten.html`
+- **Briefing:** Bob zag dat twee kaarten "omgekeerd" stonden.
+- **Aanleiding:** Bij het verwerken van de downloads waren IMG_5420.heic (= after van de strandjongen, vóór het DFC-bord) en de schermafbeelding (= before van de zwarte-jeans broeder) aan de verkeerde paren gekoppeld.
+- **Status:** voltooid
+- **Resultaat:** ba6-na is nu de DFC-bord foto op hoge resolutie (900×1200, uit IMG_5420.heic); ba5-voor is de zware broeder, hi-res uit de originele collage gecropt met ffmpeg (880×1173) in plaats van het 354px-screenshot. Beide kaarten kloppen nu logisch (zwaarder → slanker). De lage-resolutie-kanttekening uit entry 6 is hiermee vervallen.
+- **Notes voor opvolger:** Losse originelen van de zware broeder (voor-foto) bestaan mogelijk nog ergens; de crop uit de collage is nu prima, maar een origineel blijft welkom.
