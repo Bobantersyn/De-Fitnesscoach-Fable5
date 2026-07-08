@@ -211,3 +211,19 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** 13 ba-cards totaal. Nieuw: ba10 (kant-en-klare collage gesplitst, grijze short), ba11 (keuken → groene muur, onderarm-tattoo), ba12 (Apple Watch-broeder, screenshotbalken weggecropt), ba14 (tattoo-sleeve, lage resolutie 300×400, bijschrift benoemt dat bewust: "zoals het binnenkwam op WhatsApp").
 - **Notes voor opvolger:** Twee paren bewust NIET geplaatst, wachten op bevestiging van Bob: (a) gordijnen-jongen (12.22.31 (6)) → vakantiefoto met zonnebril (12.22.31 (7)): zelfde persoon?; (b) badkamer-collage (12.22.31 (1)): linkerfoto is de slankere, dus volgorde in de collage lijkt omgedraaid; welke is voor?
+
+---
+
+## Entry 12
+
+- **ID:** 12
+- **Start:** 2026-07-09
+- **Einde:** 2026-07-09
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Laatste twee before/after-kaarten na bevestiging van Bob (15 totaal)
+- **Bestand(en):** `assets/img/ba13-voor/na.jpg`, `assets/img/ba15-voor/na.jpg`, `resultaten.html`
+- **Briefing:** Bob bevestigde: gordijnen-jongen en vakantieman zijn dezelfde persoon; badkamer-collage stond omgedraaid (rechts = voor).
+- **Status:** voltooid
+- **Resultaat:** ba13 (slaapkamer → vakantiebalkon) en ba15 (badkamer-collage gesplitst en omgewisseld naar voller → slanker). Resultatenpagina toont nu 15 onbewerkte transformaties; alle beelden laden.
+- **Notes voor opvolger:** Hiermee is al het aangeleverde before/after-materiaal verwerkt, behalve: "Juiste foto.jpg" + tattoo-jongen 2025-12-06 (missen een after) en de vrouwelijke transformatie (wacht op positioneringsbesluit).
