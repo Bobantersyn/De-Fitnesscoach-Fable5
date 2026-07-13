@@ -243,3 +243,19 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** Marquee van homepage en resultatenpagina verwijderd, inclusief bijbehorende CSS. De dunne donkere USP-ticker bovenaan staat er nog. De kilo's van cliënten blijven zichtbaar in de reviewquotes.
 - **Notes voor opvolger:** De `@keyframes ticker` animatie wordt nog gebruikt door de top-ticker; niet verwijderen.
+
+---
+
+## Entry 14
+
+- **ID:** 14
+- **Start:** 2026-07-13
+- **Einde:** 2026-07-13
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** gemaakt
+- **Onderdeel:** Site live gezet op Vercel (deelbare link)
+- **Bestand(en):** Vercel-project `de-fitnesscoach-fable5` (team bobantersyns-projects), `.gitignore` (.vercel toegevoegd)
+- **Briefing:** Bob wil de site aan iemand laten zien; koos voor een Vercel-link.
+- **Status:** voltooid
+- **Resultaat:** Live op https://de-fitnesscoach-fable5.vercel.app (publiek, 200 op pagina's en afbeeldingen). Bewust als production-target van een apart project gedeployed: previews zitten bij Vercel standaard achter een inlogscherm. defitnesscoach.nl is NIET gekoppeld.
+- **Notes voor opvolger:** Nieuwe versie live zetten = `npx vercel deploy --prod --yes` vanuit de projectmap (CLI is ingelogd als bobantersyn). De site staat los van het echte domein tot Bob anders beslist.
