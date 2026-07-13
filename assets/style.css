@@ -433,34 +433,6 @@ p { margin: 0 0 var(--s-4); }
 }
 
 /* --------------------------------------------------------------------------
-   Marquee (groot, cyaan)
-   -------------------------------------------------------------------------- */
-
-.marquee {
-  background: var(--cyan);
-  border-block: 2px solid var(--ink);
-  overflow: hidden;
-  padding: var(--s-3) 0;
-}
-.marquee__track {
-  display: flex;
-  width: max-content;
-  animation: ticker 30s linear infinite;
-}
-.marquee__track span {
-  font-family: var(--display);
-  text-transform: uppercase;
-  font-size: clamp(1.25rem, 2.6vw, 1.9rem);
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-  padding-right: var(--s-6);
-  display: inline-flex;
-  align-items: center;
-  gap: var(--s-6);
-}
-.marquee__track .sep { color: var(--paper); -webkit-text-stroke: 1px var(--ink); }
-
-/* --------------------------------------------------------------------------
    Secties
    -------------------------------------------------------------------------- */
 
@@ -1040,6 +1012,6 @@ a.contact-card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 v
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .ticker__track, .marquee__track { animation: none; }
+  .ticker__track { animation: none; }
   * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }

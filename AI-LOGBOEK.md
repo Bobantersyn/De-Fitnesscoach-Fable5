@@ -227,3 +227,19 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** ba13 (slaapkamer → vakantiebalkon) en ba15 (badkamer-collage gesplitst en omgewisseld naar voller → slanker). Resultatenpagina toont nu 15 onbewerkte transformaties; alle beelden laden.
 - **Notes voor opvolger:** Hiermee is al het aangeleverde before/after-materiaal verwerkt, behalve: "Juiste foto.jpg" + tattoo-jongen 2025-12-06 (missen een after) en de vrouwelijke transformatie (wacht op positioneringsbesluit).
+
+---
+
+## Entry 13
+
+- **ID:** 13
+- **Start:** 2026-07-09
+- **Einde:** 2026-07-09
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** verwijderd
+- **Onderdeel:** Cyaan scorebord-marquee verwijderd
+- **Bestand(en):** `index.html`, `resultaten.html`, `assets/style.css`
+- **Briefing:** Bob vond de lopende cijferband de site te druk maken.
+- **Status:** voltooid
+- **Resultaat:** Marquee van homepage en resultatenpagina verwijderd, inclusief bijbehorende CSS. De dunne donkere USP-ticker bovenaan staat er nog. De kilo's van cliënten blijven zichtbaar in de reviewquotes.
+- **Notes voor opvolger:** De `@keyframes ticker` animatie wordt nog gebruikt door de top-ticker; niet verwijderen.
