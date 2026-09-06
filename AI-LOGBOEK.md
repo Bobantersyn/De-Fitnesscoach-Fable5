@@ -315,3 +315,23 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** De doorverwijzing /coaching → info.defitnesscoach.nl is verwijderd. `cleanUrls: true` aangezet, dus /coaching, /resultaten, /contact en /over-ertugrul werken nu zonder .html (getest: 200); oude .html-adressen sturen met 308 door naar de nette variant, dus interne links en eventuele externe links blijven werken. /receptenboek blijft doorverwijzen naar de funnel (307).
 - **Notes voor opvolger:** Interne links in de HTML staan bewust nog op `*.html` zodat de lokale preview (python http.server, geen clean URLs) blijft werken; live lost Vercel dat op met een redirect.
+
+---
+
+## Entry 18
+
+- **ID:** 18
+- **Start:** 2026-07-13
+- **Einde:** 2026-07-13
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** HERSTEL — receptenboek-funnel teruggezet op www.defitnesscoach.nl/receptenboek
+- **Bestand(en):** `vercel.json`
+- **Briefing:** Bob meldde dat /receptenboek moest blijven zoals het was; daar begint zijn funnel.
+- **Aanleiding:** FOUT in entry 15/16. Aanname was dat info.defitnesscoach.nl dezelfde funnel-app draaide, dus /receptenboek werd doorverwezen naar info. In werkelijkheid is info.defitnesscoach.nl een héél andere landingspagina op een andere host (A 15.197.171.219, geen Vercel, titel "Buikvet verliezen als Turkse man?"). De funnel-app (project `de-fitnesscoach-receptenboek`) was alleen via www bereikbaar; na het verplaatsen van het domein was hij dus onbereikbaar geworden — /receptenboek gaf 404 via de redirect.
+- **Status:** voltooid
+- **Resultaat:** Redirects vervangen door **rewrites (proxy)** naar `landingspagina2026.vercel.app`, zodat de funnel op het onveranderde adres www.defitnesscoach.nl/receptenboek draait. Geproxyed: /receptenboek(/*), /bedankt(/*), /privacy, /_next/*, /api/*, /logo-defitnesscoach.png. Getest: funnel 200 met eigen URL behouden, JS-assets 200, /bedankt en /privacy 200, merksite (/ , /coaching, /resultaten) onveranderd 200, visueel gecontroleerd in de browser.
+- **Notes voor opvolger:**
+  - LES: nooit aannemen dat een subdomein dezelfde app draait; altijd de inhoud van de doel-URL controleren vóór een redirect live gaat.
+  - De funnel-app heeft alleen de routes /receptenboek, /bedankt, /privacy, /coaching (die laatste gebruikt Bob niet meer). Geen sitemap; andere paden geven 404.
+  - Het funnel-project houdt `landingspagina2026.vercel.app` als bron voor de proxy; die alias niet verwijderen.
