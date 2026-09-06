@@ -1009,6 +1009,22 @@ a.contact-card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 v
 .reveal[data-delay="2"] { transition-delay: 0.16s; }
 .reveal[data-delay="3"] { transition-delay: 0.24s; }
 
+/* --------------------------------------------------------------------------
+   Mobiele correcties
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 720px) {
+  /* chips niet half buiten beeld laten vallen */
+  .photo-frame > .chip[style*="left: -"] { left: 10px !important; }
+  .photo-frame > .chip[style*="right: -"] { right: 10px !important; }
+  .chip { max-width: calc(100% - 20px); }
+
+  /* footerlinks groter aantikbaar maken */
+  .site-footer ul { gap: var(--s-1); }
+  .site-footer ul a,
+  .site-footer ul li { display: inline-block; padding: 9px 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }

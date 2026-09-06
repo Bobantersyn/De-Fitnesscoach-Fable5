@@ -335,3 +335,23 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
   - LES: nooit aannemen dat een subdomein dezelfde app draait; altijd de inhoud van de doel-URL controleren vóór een redirect live gaat.
   - De funnel-app heeft alleen de routes /receptenboek, /bedankt, /privacy, /coaching (die laatste gebruikt Bob niet meer). Geen sitemap; andere paden geven 404.
   - Het funnel-project houdt `landingspagina2026.vercel.app` als bron voor de proxy; die alias niet verwijderen.
+
+---
+
+## Entry 19
+
+- **ID:** 19
+- **Start:** 2026-07-13
+- **Einde:** 2026-07-13
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Mobiele controle van de live site + twee correcties
+- **Bestand(en):** `assets/style.css`
+- **Briefing:** Bob vroeg om alles op mobiel te checken.
+- **Status:** voltooid
+- **Resultaat:**
+  - Gecontroleerd op 375×812 (live, www.defitnesscoach.nl): home, coaching, resultaten, over-ertugrul, contact en de funnel op /receptenboek. Geen horizontale overflow op één van de pagina's, geen kapotte afbeeldingen, reviews vallen terug naar 1 kolom, FAQ-accordeon werkt, mobiel menu opent/sluit met correcte aria-expanded en toont alle 6 links, contactkaarten 343px breed met werkende tel:- en WhatsApp-links, funnel-CTA opent het opt-informulier (naam + e-mail) op het onveranderde adres (niets verstuurd).
+  - **Fix 1:** annotatie-chips stonden op mobiel deels buiten beeld (negatieve inline left/right, body heeft overflow-x hidden). Media query < 720px trekt ze naar 10px binnen het kader. Alle 6 chips nu volledig zichtbaar.
+  - **Fix 2:** footerlinks waren 19-21px hoog, te klein om te tikken. Nu 45px op mobiel.
+  - Desktop geverifieerd op 1280px: chips en footer ongewijzigd, geen overflow.
+- **Notes voor opvolger:** Bob wil later de receptenboek-funnel als échte pagina in deze site opnemen, in plaats van de proxy naar `landingspagina2026.vercel.app`. Screenshots via de Browser pane zijn onbetrouwbaar zolang die is dichtgeklapt; metingen via javascript_tool wel.
