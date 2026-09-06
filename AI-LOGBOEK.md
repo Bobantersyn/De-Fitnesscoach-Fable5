@@ -276,3 +276,26 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Resultaat:** `vercel.json` toegevoegd met (1) apex→www redirect en (2) doorverwijzingen /receptenboek* en /coaching* → info.defitnesscoach.nl zodat bestaande funnel-links en ads blijven werken na de overstap. Gedeployed en getest (307 → info werkt). Domein koppelen faalt nog: `domain_not_owned` (403), want www.defitnesscoach.nl is geclaimd door Bobs ándere Vercel-account (funnel via GitHub-integratie; login onbekend, enige team hier is bobantersyns-projects).
 - **Foutmelding:** `vercel domains add` → "Not authorized to use www.defitnesscoach.nl (403), domain_not_owned".
 - **Notes voor opvolger:** Vervolgstappen: (1) Bob verwijdert in zijn andere Vercel-account bij het funnel-project de domeinen www.defitnesscoach.nl en evt. defitnesscoach.nl (info.defitnesscoach.nl LATEN STAAN), (2) daarna `npx vercel domains add www.defitnesscoach.nl` en `npx vercel domains add defitnesscoach.nl` in deze map, (3) DNS bij Hostnet: www CNAME staat nu op a730c5d3137853aa.vercel-dns-017.com en moet naar de waarde die Vercel bij stap 2 geeft; apex heeft al A 216.198.79.1 (Vercel).
+
+---
+
+## Entry 16
+
+- **ID:** 16
+- **Start:** 2026-07-13
+- **Einde:** 2026-07-13
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** www.defitnesscoach.nl gekoppeld aan de nieuwe site
+- **Bestand(en):** Vercel-projecten `de-fitnesscoach-receptenboek` en `de-fitnesscoach-fable5`, DNS bij Hostnet
+- **Briefing:** Bob wil de nieuwe merkwebsite op www.defitnesscoach.nl.
+- **Status:** voltooid
+- **Resultaat:**
+  - Bleek geen tweede Vercel-account: het domein zat aan het project `de-fitnesscoach-receptenboek` (prj_QFsM6rSbUHfjKCP0Tv2vPAlmp5OA) binnen hetzelfde team. Domein daar losgekoppeld en toegevoegd aan `de-fitnesscoach-fable5`.
+  - Bob heeft bij Hostnet twee TXT-records `_vercel.defitnesscoach.nl` gezet met de nieuwe verificatiecodes; beide domeinen geverifieerd.
+  - Apex `defitnesscoach.nl` staat op platform-niveau als 308-redirect naar www.
+  - Live getest: www = nieuwe site (200), apex → www (308), /resultaten.html (200), /receptenboek → info.defitnesscoach.nl (307), info-funnel ongewijzigd (200).
+- **Notes voor opvolger:**
+  - `www.defitnesscoach.nl/receptenboek` en `/coaching` sturen via `vercel.json` door naar info.defitnesscoach.nl (oude funnel-links en ads blijven werken). Let op: `/coaching` gaat dus naar de funnel, de merkpagina staat op `/coaching.html`. Zodra Bob zeker weet dat er geen ads meer op /coaching draaien, kan die redirect eruit.
+  - Oude DNS-restjes bij Hostnet die geen kwaad kunnen: TXT `_vercel.www.defitnesscoach.nl` (oude code) en CNAME `www` → `a730c5d3137853aa.vercel-dns-017.com` (werkt, Vercel meldt geen misconfiguratie).
+  - Nieuwe versie live zetten: `npx vercel deploy --prod --yes` in deze map.
