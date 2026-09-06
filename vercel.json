@@ -1,11 +1,7 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "defitnesscoach.nl" }],
-      "destination": "https://www.defitnesscoach.nl/:path*",
-      "permanent": true
-    },
     {
       "source": "/receptenboek",
       "destination": "https://info.defitnesscoach.nl/receptenboek",
@@ -14,16 +10,6 @@
     {
       "source": "/receptenboek/:path*",
       "destination": "https://info.defitnesscoach.nl/receptenboek/:path*",
-      "permanent": false
-    },
-    {
-      "source": "/coaching",
-      "destination": "https://info.defitnesscoach.nl/coaching",
-      "permanent": false
-    },
-    {
-      "source": "/coaching/:path*",
-      "destination": "https://info.defitnesscoach.nl/coaching/:path*",
       "permanent": false
     }
   ]

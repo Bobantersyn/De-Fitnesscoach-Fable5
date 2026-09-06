@@ -299,3 +299,19 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
   - `www.defitnesscoach.nl/receptenboek` en `/coaching` sturen via `vercel.json` door naar info.defitnesscoach.nl (oude funnel-links en ads blijven werken). Let op: `/coaching` gaat dus naar de funnel, de merkpagina staat op `/coaching.html`. Zodra Bob zeker weet dat er geen ads meer op /coaching draaien, kan die redirect eruit.
   - Oude DNS-restjes bij Hostnet die geen kwaad kunnen: TXT `_vercel.www.defitnesscoach.nl` (oude code) en CNAME `www` → `a730c5d3137853aa.vercel-dns-017.com` (werkt, Vercel meldt geen misconfiguratie).
   - Nieuwe versie live zetten: `npx vercel deploy --prod --yes` in deze map.
+
+---
+
+## Entry 17
+
+- **ID:** 17
+- **Start:** 2026-07-13
+- **Einde:** 2026-07-13
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** /coaching teruggegeven aan de merksite + nette URL's zonder .html
+- **Bestand(en):** `vercel.json`
+- **Briefing:** Bob: de oude funnelpagina op /coaching wordt niet meer gebruikt.
+- **Status:** voltooid
+- **Resultaat:** De doorverwijzing /coaching → info.defitnesscoach.nl is verwijderd. `cleanUrls: true` aangezet, dus /coaching, /resultaten, /contact en /over-ertugrul werken nu zonder .html (getest: 200); oude .html-adressen sturen met 308 door naar de nette variant, dus interne links en eventuele externe links blijven werken. /receptenboek blijft doorverwijzen naar de funnel (307).
+- **Notes voor opvolger:** Interne links in de HTML staan bewust nog op `*.html` zodat de lokale preview (python http.server, geen clean URLs) blijft werken; live lost Vercel dat op met een redirect.
