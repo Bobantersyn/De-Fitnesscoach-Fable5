@@ -259,3 +259,20 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** Live op https://de-fitnesscoach-fable5.vercel.app (publiek, 200 op pagina's en afbeeldingen). Bewust als production-target van een apart project gedeployed: previews zitten bij Vercel standaard achter een inlogscherm. defitnesscoach.nl is NIET gekoppeld.
 - **Notes voor opvolger:** Nieuwe versie live zetten = `npx vercel deploy --prod --yes` vanuit de projectmap (CLI is ingelogd als bobantersyn). De site staat los van het echte domein tot Bob anders beslist.
+
+---
+
+## Entry 15
+
+- **ID:** 15
+- **Start:** 2026-07-13
+- **Einde:** 2026-07-13
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast / beslissing
+- **Onderdeel:** Voorbereiding domeinkoppeling www.defitnesscoach.nl
+- **Bestand(en):** `vercel.json` (nieuw), Vercel-project `de-fitnesscoach-fable5`
+- **Briefing:** Bob wil de nieuwe site op www.defitnesscoach.nl. Op dat domein draait nu een Next.js-app (ander Vercel-account) met de funnel op /receptenboek en /coaching; de root is leeg. Dezelfde app draait ook op info.defitnesscoach.nl.
+- **Status:** voltooid met issues
+- **Resultaat:** `vercel.json` toegevoegd met (1) apex→www redirect en (2) doorverwijzingen /receptenboek* en /coaching* → info.defitnesscoach.nl zodat bestaande funnel-links en ads blijven werken na de overstap. Gedeployed en getest (307 → info werkt). Domein koppelen faalt nog: `domain_not_owned` (403), want www.defitnesscoach.nl is geclaimd door Bobs ándere Vercel-account (funnel via GitHub-integratie; login onbekend, enige team hier is bobantersyns-projects).
+- **Foutmelding:** `vercel domains add` → "Not authorized to use www.defitnesscoach.nl (403), domain_not_owned".
+- **Notes voor opvolger:** Vervolgstappen: (1) Bob verwijdert in zijn andere Vercel-account bij het funnel-project de domeinen www.defitnesscoach.nl en evt. defitnesscoach.nl (info.defitnesscoach.nl LATEN STAAN), (2) daarna `npx vercel domains add www.defitnesscoach.nl` en `npx vercel domains add defitnesscoach.nl` in deze map, (3) DNS bij Hostnet: www CNAME staat nu op a730c5d3137853aa.vercel-dns-017.com en moet naar de waarde die Vercel bij stap 2 geeft; apex heeft al A 216.198.79.1 (Vercel).
