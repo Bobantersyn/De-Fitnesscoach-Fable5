@@ -355,3 +355,19 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
   - **Fix 2:** footerlinks waren 19-21px hoog, te klein om te tikken. Nu 45px op mobiel.
   - Desktop geverifieerd op 1280px: chips en footer ongewijzigd, geen overflow.
 - **Notes voor opvolger:** Bob wil later de receptenboek-funnel als échte pagina in deze site opnemen, in plaats van de proxy naar `landingspagina2026.vercel.app`. Screenshots via de Browser pane zijn onbetrouwbaar zolang die is dichtgeklapt; metingen via javascript_tool wel.
+
+---
+
+## Entry 20
+
+- **ID:** 20
+- **Start:** 2026-07-13
+- **Einde:** 2026-07-13
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** HERSTEL — /boek-een-gesprek gaf 404 op www
+- **Bestand(en):** `vercel.json`
+- **Aanleiding:** Bob meldde een 404. Bij het overzetten van het domein waren alleen /receptenboek, /bedankt, /privacy, /_next, /api en /logo geproxied; de funnelroute **/boek-een-gesprek** (en de map /transformaties met de bewijsfoto's) was vergeten.
+- **Status:** voltooid
+- **Resultaat:** Rewrites toegevoegd voor `/boek-een-gesprek(/*)` en `/transformaties/*`. Live getest: /boek-een-gesprek, /receptenboek, /bedankt, /privacy, /coaching en /resultaten geven allemaal 200.
+- **Notes voor opvolger:** De funnel-app heeft vier routes: /receptenboek, /bedankt, /boek-een-gesprek, /privacy. Bij wijzigingen aan de proxy: controleer die vier plus /_next, /api, /transformaties en /logo-defitnesscoach.png. Zolang de funnel een aparte app is, moet elke nieuwe funnelroute hier worden bijgezet — reden te meer om hem op termijn in deze site op te nemen.
