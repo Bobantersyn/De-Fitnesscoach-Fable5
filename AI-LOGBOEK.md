@@ -371,3 +371,18 @@ Centraal logboek van al het AI-werk in dit project. Elke AI die hier iets bouwt,
 - **Status:** voltooid
 - **Resultaat:** Rewrites toegevoegd voor `/boek-een-gesprek(/*)` en `/transformaties/*`. Live getest: /boek-een-gesprek, /receptenboek, /bedankt, /privacy, /coaching en /resultaten geven allemaal 200.
 - **Notes voor opvolger:** De funnel-app heeft vier routes: /receptenboek, /bedankt, /boek-een-gesprek, /privacy. Bij wijzigingen aan de proxy: controleer die vier plus /_next, /api, /transformaties en /logo-defitnesscoach.png. Zolang de funnel een aparte app is, moet elke nieuwe funnelroute hier worden bijgezet — reden te meer om hem op termijn in deze site op te nemen.
+
+---
+
+## Entry 21
+
+- **ID:** 21
+- **Start:** 2026-07-13
+- **Einde:** 2026-07-13
+- **AI:** Claude Fable 5 via Claude Code
+- **Type:** aangepast
+- **Onderdeel:** Receptenboek-links wezen naar de verkeerde site
+- **Bestand(en):** alle 5 HTML-pagina's
+- **Aanleiding:** De receptenband op de homepage en de footerlink "Gratis receptenboek" wezen nog naar `https://info.defitnesscoach.nl` (de ándere landingspagina op een andere host), niet naar de funnel. Restant uit de bouwfase, toen nog werd aangenomen dat de funnel op info stond.
+- **Status:** voltooid
+- **Resultaat:** Alle 6 verwijzingen (band op de homepage + footerlink op elke pagina) wijzen nu naar `/receptenboek`, dus naar de echte funnel op het eigen domein. `target="_blank"` verwijderd: het is nu een interne link. Live geverifieerd.
